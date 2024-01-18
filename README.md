@@ -50,6 +50,7 @@
 - View result SFC scannow ( Посмотреть результата SFC scannow )
 - View host ( Посмотреть host )
 ### Unlock components ( Разблокировать компоненты )
+- CMD, Registry, TaskMgr
 ### Disable Internet ( Отключить интернет )
 ### Info PC ( Информация о ПК )
 
