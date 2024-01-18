@@ -4,7 +4,7 @@ chcp 65001>NUL
 ECHO.&ECHO.
 ECHO        Check update..
 ECHO        Проверка обновлений..
-curl -# --ssl-no-revoke --insecure -L https://github.com/milesthon/cleare/raw/main/cleare%%20Admin%%20(Windows%%2010%%2C%%2011).bat -o "%temp%\CheckmenuSVersion.txt"
+curl -# --ssl-no-revoke --insecure -L https://github.com/milesthon/menuS/raw/main/menuS.bat -o "%temp%\CheckmenuSVersion.txt"
 ECHO.&ECHO.
 findstr /c:"CheckmenuSVersion 18012024" "%temp%\CheckmenuSVersion.txt" > nul
 if %errorlevel%==0 (
@@ -14,11 +14,11 @@ cls
 COLOR F9
 ECHO.&ECHO.
 ECHO        Update..
-curl -# --ssl-no-revoke --insecure -L https://codeload.github.com/milesthon/cleare/zip/refs/heads/main  -o "%temp%\cleare-main.zip"
+curl -# --ssl-no-revoke --insecure -L https://codeload.github.com/milesthon/menuS/zip/refs/heads/main  -o "%temp%\menuS-main.zip"
 ECHO        [32m[5m░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 ECHO.&ECHO.
-powershell -command "Expand-Archive -Path "%temp%\cleare-main.zip" -DestinationPath "%temp%\cleare-main" -Force"         2>nul >nul
-copy "%temp%\cleare-main\cleare-main\*" "%~dp0"                                                                          2>nul >nul
+powershell -command "Expand-Archive -Path "%temp%\menuS-main.zip" -DestinationPath "%temp%\menuS-main" -Force"         2>nul >nul
+copy "%temp%\menuS-main\menuS-main\*" "%~dp0"                                                                          2>nul >nul
 start "" "%~f0"&exit
 )
 :noupdate
