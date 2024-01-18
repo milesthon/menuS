@@ -51,11 +51,10 @@
 - View host ( Посмотреть host )
 ### Unlock components ( Разблокировать компоненты )
 ### Disable Internet ( Отключить интернет )
-### Info PC ( Информация о ПК )  
-  
-  
+### Info PC ( Информация о ПК )
+
+<br>
 <div align="center">  
-  
 <img alt="Image" src="https://github.com/MilesthoN/menuS/blob/main/Image.png"/>
 
 ***
