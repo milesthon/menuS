@@ -3,8 +3,6 @@ chcp 65001>NUL
 title MenuS by MilesthoN
 COLOR F9
 
-goto :menu
-
 ECHO.&ECHO.
 ECHO        Check update..
 ECHO        Проверка обновлений..
