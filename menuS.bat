@@ -7,8 +7,9 @@ ECHO.&ECHO.
 ECHO        Check update..
 ECHO        Проверка обновлений..
 curl -# --ssl-no-revoke --insecure -L https://github.com/milesthon/menuS/raw/main/menuS.bat -o "%temp%\CheckmenuSVersion.txt"
+if %errorlevel% neq 0 goto noupdate
 ECHO.&ECHO.
-findstr /c:"CheckmenuSVersion 18012024" "%temp%\CheckmenuSVersion.txt" > nul
+findstr /c:"CheckmenuSVersion 26012024" "%temp%\CheckmenuSVersion.txt" > nul
 if %errorlevel%==0 (
 goto noupdate
 ) else (
